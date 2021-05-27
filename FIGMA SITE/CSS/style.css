@@ -1,0 +1,204 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    background-color: #fff;
+    font-family: 'Gotham Pro','Arial', sans-serif;
+    font-size: 16px;
+    line-height: 150%;
+}
+
+h1,h2,h3,h4,h5{
+    font-weight: bold;
+}
+
+h1{
+    font-size: 40px;
+    line-height: 120%;
+}
+
+/*-----header-----*/
+.header__video{
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 689px;
+    z-index: -100;
+    overflow: hidden;
+}
+
+
+.header{
+    background: url("../img/fon-mask.png") no-repeat top right;
+    min-height: 750px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.Bar1{
+    color: black;
+}
+
+.Bar2{
+    color: gray;
+}
+
+.header__wrapper{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.navbar{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    height: 40px;
+    margin-top: 60px;
+}
+
+.header__content{
+    width: 509px;
+    height: 208px;
+    margin-top: 204px;
+    margin-bottom: 238px;
+}
+
+.main{
+    margin-top: 750px;
+}
+
+/*-----section-----*/
+.section__wrapper{
+    width: 1200px;
+    margin: 0 auto;
+    border: 1px solid black;
+}
+
+
+/*-----Products-----*/
+.products__wrapper{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 64px;
+    padding-bottom: 72px;
+}
+
+.zagalovok{
+    text-align: center;
+}
+
+.advantages__item{
+    box-sizing: border-box;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin: 50px;
+    width: 200px;
+}
+
+.TextAdvantages{
+    flex-wrap: wrap;
+}
+
+.advantages__wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.products__item{
+    box-sizing: border-box;
+    border: black;
+    box-shadow: black;
+    width: 380px;
+    height: 398px;
+    font-size: 22px;
+    line-height: 140%;
+    text-align: center;
+}
+
+.PET{
+    margin-top: 125px;
+    text-align: center;
+}
+
+.products__item2{
+    box-sizing: border-box;
+    width: 380px;
+    height: 398px;
+    background-color: #59BBF2;
+    color: white;
+    font-size: 22px;
+    line-height: 140%;
+    text-align: center;
+}
+
+/*-----Sampels-----*/
+.samples .slider__wrapper{
+    position: relative;
+}
+
+.samples .slider__list{
+    height: 278px;
+    background-color: gray;
+}
+
+.slider__button{
+    position: absolute;
+    top: 50%;
+}
+
+.slider__button--next{
+    left: 1140px;
+}
+
+.slider__button--prev{
+    left: 10px;
+}
+a{
+    color: white;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+a:hover{
+    color: #59BBF2;
+}
+
+
+a:active{
+    background: rgba(150,150,150,.5);
+}
+
+/*-----Image-----*/
+.imageBar{
+    background: url('../img/Rectangle 7.1.png');
+    width: 150px;
+    height: 40px;
+    text-align: center;
+}
+
+.Papper{
+    position: relative;
+    padding-left: 30px;
+    padding-top: 100px;
+}
+
+.Elipse{
+    position: absolute;
+    padding-right:85px;
+    padding-top: 50px;
+}
+
+.imgAdvanages{
+    width: 40px;
+    flex-wrap: wrap;
+}
