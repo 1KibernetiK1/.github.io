@@ -76,8 +76,8 @@ h1{
 .section__wrapper{
     width: 1200px;
     margin: 0 auto;
-    border: 1px solid black;
 }
+
 
 
 /*-----Products-----*/
@@ -94,17 +94,20 @@ h1{
 }
 
 .advantages__item{
+    display: flex;
     box-sizing: border-box;
     padding-left: 10px;
     padding-right: 10px;
     padding-top: 5px;
     padding-bottom: 5px;
-    margin: 50px;
-    width: 200px;
+    margin: 15px;
+    width: 280px;
 }
 
 .TextAdvantages{
     flex-wrap: wrap;
+    padding-left: 40px;
+    
 }
 
 .advantages__wrapper{
@@ -116,8 +119,9 @@ h1{
 
 .products__item{
     box-sizing: border-box;
+    border-radius: 10px;
     border: black;
-    box-shadow: black;
+    box-shadow: 0 0 10px 5px rgb(90, 90, 90);
     width: 380px;
     height: 398px;
     font-size: 22px;
@@ -126,15 +130,17 @@ h1{
 }
 
 .PET{
-    margin-top: 125px;
+    margin-top: 100px;
     text-align: center;
 }
 
 .products__item2{
     box-sizing: border-box;
     width: 380px;
+    border-radius: 10px;
     height: 398px;
     background-color: #59BBF2;
+    box-shadow: 0 0 10px 5px  rgb(90, 90, 90);
     color: white;
     font-size: 22px;
     line-height: 140%;
@@ -146,9 +152,27 @@ h1{
     position: relative;
 }
 
+.samples__title{
+    text-align: center;
+    flex-wrap: wrap;
+
+}
+
 .samples .slider__list{
+    box-sizing: border-box;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    display: flex;
     height: 278px;
-    background-color: gray;
+}
+
+.page{
+    margin-top: 20px;
+    text-align: center;
+}
+
+.Samples__Product1{
+   background-color: wheat;
 }
 
 .slider__button{
@@ -157,11 +181,21 @@ h1{
 }
 
 .slider__button--next{
-    left: 1140px;
+    left: 1225px;
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;        
 }
 
 .slider__button--prev{
-    left: 10px;
+    left: -70px;
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;        
 }
 a{
     color: white;
@@ -179,26 +213,78 @@ a:active{
 }
 
 /*-----Image-----*/
-.imageBar{
-    background: url('../img/Rectangle 7.1.png');
-    width: 150px;
-    height: 40px;
-    text-align: center;
-}
+
 
 .Papper{
     position: relative;
-    padding-left: 30px;
+    padding-left: 50px;
     padding-top: 100px;
 }
 
 .Elipse{
     position: absolute;
-    padding-right:85px;
+    padding-right:200px;
     padding-top: 50px;
 }
 
 .imgAdvanages{
-    width: 40px;
+    margin-top: 20px;
+    height: 60px;
     flex-wrap: wrap;
+}
+
+/*-----feature-----*/
+
+.section__features{
+    box-sizing: border-box;
+    text-align: right;
+    
+    width: 380px;
+    height: 398px;
+    font-size: 22px;
+    line-height: 140%;
+   
+}
+
+@media(max-width:1200px){
+    .section__wrapper{
+        width: 100%;
+    }
+    .header__wrapper{
+        width: 100%;
+    }
+    .products__item{
+        width: 30%;
+    }
+    .products__item2{
+        width: 30%;
+    }
+}
+
+@media(max-width :900px){
+    .products__item{
+        width: 100%;
+        height: 300px;
+        margin-bottom: 20px;
+    }
+    .products__item2{
+        width: 100%;
+        height: 300px;
+        margin-bottom: 20px;
+    }
+}
+
+@media(max-width :768px){
+    .header__video{
+        display: none;
+    }
+    .header{
+        background: #59BBF2;
+    }
+    .slider__button--next, .slider__button--prev{
+        display: none;
+    }
+    .Bar3{
+        display: none;
+    }
 }
